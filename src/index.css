@@ -1,0 +1,16 @@
+body {
+  font-family: Microsoft YaHei,Avenir, Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center1;
+  color: #2c3e50;
+}
+button, input, select, textarea,pre {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+#app{
+  height:100%;
+}
