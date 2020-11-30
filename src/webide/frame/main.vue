@@ -1,15 +1,15 @@
 <template>
     <fd-layout>
-    <fd-layout-pane style="height:100px">header</fd-layout-pane>
+    <fd-layout-pane style="height:50px">header</fd-layout-pane>
     <fd-layout-pane  style="height:100%">
     <fd-layout lr>
-           <fd-layout-pane  style="width:100px">left</fd-layout-pane>
+           <fd-layout-pane  style="width:200px">left</fd-layout-pane>
            <fd-layout-pane  style="width:100%">
-               <ResourceTree></ResourceTree>
+               <ResourceEditor></ResourceEditor>
            </fd-layout-pane>
     </fd-layout>
     </fd-layout-pane>
-    <fd-layout-pane  style="height:100px">foot</fd-layout-pane>
+    <fd-layout-pane  style="height:50px">foot</fd-layout-pane>
     </fd-layout>
 </template>
 
@@ -19,10 +19,10 @@
 }
 </style>
 <script>
-import ResourceTree from './resourceTree.vue'
+import ResourceEditor from './resourceEditor.vue'
 export default {
     components: {
-    ResourceTree
+    ResourceEditor
   }
 }
 </script>
