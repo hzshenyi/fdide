@@ -1,18 +1,20 @@
 <template>
-  test
+  <div v-for="el in elList">
+    {{ el.title }}
+    <resourceTree v-if="el.children" :elList = "el.children"></resourceTree>
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
 <script>
-import {ref} from 'vue'
+import { ref, reactive } from "vue";
 export default {
-    setup(){
-        let activeName = ref("a");
-        return {
-            activeName
-        }
-    }
-}
+  name: "resourceTree",
+  props: {
+    elList: {
+      type: Array,
+    },
+  },
+  setup() {},
+};
 </script>
