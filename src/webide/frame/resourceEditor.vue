@@ -14,6 +14,8 @@
 <script>
 import {ref,reactive} from 'vue' 
 import resourceTree from '../components/resourceTree.vue'
+import resource from '../lib/resource.js'
+import dom from '../lib/dom.js'
 export default {
     components:{
         resourceTree
@@ -22,7 +24,10 @@ export default {
         let activeName = ref("a");
         let data = reactive({});
         data.resourceTree=[{title:"a",children:[{title:"a1"}]}]
-       
+        resource.load((html)=>{
+           let json = dom.parseHtmlToJson(html);
+           
+        })
         return {
             activeName,data
         }
