@@ -1,7 +1,8 @@
 <template>
   <div class="group"  :class="[`nodeType-${el.$$nodeType}`,{ actived: el.$$actived,overed:el.$$overed,fold:el.$$fold}]" v-for="(el,index) in elList" 
    @click.stop="editGroup(el,elList,index)" @mouseover.stop="el.$$overed=true" @mouseout="el.$$overed=false">
-    <div class="line" @dblclick="fold(el)">
+   <span v-if="el.children">-</span>
+    <div class="line" @click="resourceTreeApi.showHelp(el)">  
       <span v-show="el.$$nodeType!=3">&lt;{{ el.tagName }}
       <span v-for="propName in getPropList(el)" class="prop"
         >{{ propName }}=<span class="prop1"
@@ -11,7 +12,7 @@
             v-model="el[propName]"
             @change="domChange(el, propName)" /></span
         ><span class="autoSize">{{ el[propName] }}</span></span
-      >
+      > 
       ></span>
     </div>
     <resourceTree v-if="el.children" :elList="el.children"></resourceTree>
@@ -95,7 +96,8 @@
 </style>
 
 <script>
-import { ref, reactive } from "vue";
+import { ref, reactive,getCurrentInstance } from "vue";
+import resourceTreeApi from './resourceTree.js'
 export default {
   name: "resourceTree",
   props: {
@@ -104,6 +106,7 @@ export default {
     },
   },
   setup() {
+     const ctx = getCurrentInstance().ctx;
         let getPropList = (dom) => {
       let propList = [];
       for (let propName in dom) {
@@ -117,9 +120,17 @@ export default {
         }
       }
       return propList;
-    };
+    }
+  let domChange = ()=>{
+
+  }
+  let domChangeInnerHtml = ()=>{
+
+  }
+  let editGroup = ()=>{
+  }
     return {
-        getPropList
+        getPropList,domChange,domChangeInnerHtml,editGroup,resourceTreeApi
     }
   },
 };
