@@ -5,11 +5,12 @@
     <fd-layout lr>
            <fd-layout-pane  style="width:200px">left</fd-layout-pane>
            <fd-layout-pane  style="width:100%">
-               <ResourceEditor></ResourceEditor>
+               <resourceEditor></resourceEditor>
            </fd-layout-pane>
+             <fd-layout-pane  style="width:200px"><resourceProp></resourceProp></fd-layout-pane>
     </fd-layout>
     </fd-layout-pane>
-    <fd-layout-pane  style="height:50px">foot</fd-layout-pane>
+    <fd-layout-pane  style="height:50px"><foot></foot></fd-layout-pane>
     </fd-layout>
 </template>
 
@@ -19,10 +20,16 @@
 }
 </style>
 <script>
-import ResourceEditor from './resourceEditor.vue'
+import {getCurrentInstance} from 'vue'
+import resourceEditor from './resourceEditor.vue'
+import resourceProp from './resourceProp.vue'
+import foot from './foot.vue'
 export default {
     components: {
-    ResourceEditor
+    resourceEditor,resourceProp,foot
+  },
+  setup(){
+   
   }
 }
 </script>

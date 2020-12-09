@@ -4,7 +4,7 @@
            <div  id="ideDesigner">
            <resourceTree :elList="data.resourceTree"></resourceTree>
            </div>
-           <div>{{state.help.value}}</div>
+ 
        </fd-tab-pane>
        <fd-tab-pane label="源码"  name="b">
        </fd-tab-pane>
@@ -15,21 +15,18 @@
 
 </style>
 <script>
-import {ref,reactive} from 'vue' 
+import {ref,reactive,getCurrentInstance} from 'vue' 
 import resourceTree from '../components/resourceTree.vue'
 import resource from '../lib/resource.js'
 import dom from '../lib/dom.js'
-import store from '../lib/store.js'
 export default {
     components:{
         resourceTree
     },
     setup(){
+        let ctx = getCurrentInstance().ctx;
         let activeName = ref("a");
-        let help = ref("help");
-        let state = store.state;
-        state.help = help;
-        let data = reactive({});
+         let data = reactive({});
         data.resourceTree=[{title:"a",children:[{title:"a1"}]}]
         resource.load((html)=>{
            let json = dom.parseHtmlToJson(html);
@@ -37,7 +34,7 @@ export default {
            
         })
         return {
-            activeName,data,state
+            activeName,data
         }
     }
 }
