@@ -14,7 +14,7 @@
 
 </style>
 <script>
-import {ref,reactive,getCurrentInstance} from 'vue' 
+import {ref,reactive,getCurrentInstance,watch} from 'vue' 
 import ResourceTree from '../components/resourceTree.vue'
 import resource from '../lib/resource.js'
 import store from '../lib/store.js'
@@ -30,7 +30,11 @@ export default {
         resource.load((html)=>{
            let json = dom.parseHtmlToJson(html);
            store.put("resourceTree",[json]);
+           watch(resourceTree.value,(value)=>{
+            //  console.log(value)
+           })
         })
+    
         return {
             store,activeName,resourceTree
         }

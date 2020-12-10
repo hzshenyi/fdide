@@ -1,7 +1,7 @@
 <template>
-    <div v-if="elHelp.$target">
-        <span>{{elHelp.title}}</span>
-        <textarea v-model="elHelp.$target.innerHTML"></textarea>
+    <div v-if="el.$$help">
+        <span>{{el.$$help.title}}</span>
+        <textarea v-model="el.innerHTML"></textarea>
     </div>
 </template>
 
@@ -11,9 +11,12 @@ import {ref,reactive,getCurrentInstance,watch} from 'vue'
 export default {
     setup(){
         let ctx = getCurrentInstance().ctx;
-        let elHelp = store.get("component");
+        let el = store.get("component");
+         watch(el,(value)=>{
+            // console.log(value)
+           })
         return {
-           elHelp
+           el
         }
     }
 }

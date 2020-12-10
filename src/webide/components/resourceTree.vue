@@ -1,8 +1,8 @@
 <template>
-  <div class="group"  :class="[`nodeType-${el.$$nodeType}`,{ actived: el.$$actived,overed:el.$$overed,fold:el.$$fold}]" v-for="(el,index) in elList" 
-   @click.stop="editGroup(el,elList,index)" @mouseover.stop="el.$$overed=true" @mouseout="el.$$overed=false">
+  <div class="group"  @click.stop="resourceTreeApi.showHelp(el)" :class="[`nodeType-${el.$$nodeType}`,{ actived: el.$$actived,overed:el.$$overed,fold:el.$$fold}]" v-for="(el,index) in elList" 
+    @mouseover.stop="el.$$overed=true" @mouseout="el.$$overed=false">
    <span v-if="el.children">-</span>
-    <div class="line" @click="resourceTreeApi.showHelp(el)">  
+    <div class="line">  
       <span v-show="el.$$nodeType!=3">&lt;{{ el.tagName }}
       <span v-for="propName in getPropList(el)" class="prop"
         >{{ propName }}=<span class="prop1"
