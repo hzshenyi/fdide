@@ -2,9 +2,8 @@
    <fd-tabs  v-model="activeName">
        <fd-tab-pane label="资源树" name="a">
            <div  id="ideDesigner">
-           <resourceTree :elList="data.resourceTree"></resourceTree>
+           <ResourceTree :elList="resourceTree"></ResourceTree>
            </div>
- 
        </fd-tab-pane>
        <fd-tab-pane label="源码"  name="b">
        </fd-tab-pane>
@@ -16,25 +15,24 @@
 </style>
 <script>
 import {ref,reactive,getCurrentInstance} from 'vue' 
-import resourceTree from '../components/resourceTree.vue'
+import ResourceTree from '../components/resourceTree.vue'
 import resource from '../lib/resource.js'
+import store from '../lib/store.js'
 import dom from '../lib/dom.js'
 export default {
     components:{
-        resourceTree
+        ResourceTree 
     },
     setup(){
         let ctx = getCurrentInstance().ctx;
-        let activeName = ref("a");
-         let data = reactive({});
-        data.resourceTree=[{title:"a",children:[{title:"a1"}]}]
+        let activeName = ref("a"); 
+        let resourceTree = store.get("resourceTree");//从全局中得到资源树json
         resource.load((html)=>{
            let json = dom.parseHtmlToJson(html);
-           data.resourceTree = [json];
-           
+           store.put("resourceTree",[json]);
         })
         return {
-            activeName,data
+            store,activeName,resourceTree
         }
     }
 }

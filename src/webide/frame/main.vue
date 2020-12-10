@@ -7,7 +7,9 @@
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
            </fd-layout-pane>
-             <fd-layout-pane  style="width:200px"><resourceProp></resourceProp></fd-layout-pane>
+             <fd-layout-pane  style="width:200px">
+                 <resourceProp></resourceProp>
+                 </fd-layout-pane>
     </fd-layout>
     </fd-layout-pane>
     <fd-layout-pane  style="height:50px"><foot></foot></fd-layout-pane>

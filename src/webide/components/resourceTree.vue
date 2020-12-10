@@ -15,7 +15,7 @@
       > 
       ></span>
     </div>
-    <resourceTree v-if="el.children" :elList="el.children"></resourceTree>
+    <ResourceTree v-if="el.children" :elList="el.children"></ResourceTree>
     <span class="prop1" v-if="!el.children"
       ><span style="width: 100%">{{ el.innerHTML }}</span
       ><input
@@ -99,10 +99,11 @@
 import { ref, reactive,getCurrentInstance } from "vue";
 import resourceTreeApi from './resourceTree.js'
 export default {
-  name: "resourceTree",
+  name: "ResourceTree",
   props: {
     elList: {
       type: Array,
+      default:[]
     },
   },
   setup() {
