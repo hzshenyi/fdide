@@ -8,6 +8,7 @@ let domApi = {
   parseHtmlToDom(html) {
     let domRoot = new DOMParser().parseFromString(html, "text/html");
     let resourceTemplateDom = domRoot.querySelector("template");
+    resourceTemplateDom.content.$$root = resourceTemplateDom;
     return resourceTemplateDom.content;
   },
   parseDomToJson(dom) {

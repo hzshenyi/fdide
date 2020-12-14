@@ -6,6 +6,7 @@
            <fd-layout-pane  style="width:200px">left</fd-layout-pane>
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
+           
            </fd-layout-pane>
              <fd-layout-pane  style="width:200px">
                  <resourceProp></resourceProp>
@@ -22,16 +23,17 @@
 }
 </style>
 <script>
-import {getCurrentInstance} from 'vue'
+import {getCurrentInstance,watch} from 'vue'
 import resourceEditor from './resourceEditor.vue'
 import resourceProp from './resourceProp.vue'
 import foot from './foot.vue'
+import store from '../lib/store.js'
 export default {
     components: {
     resourceEditor,resourceProp,foot
   },
   setup(){
-   
+
   }
 }
 </script>

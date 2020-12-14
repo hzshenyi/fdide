@@ -1,7 +1,7 @@
 <template>
     <div v-if="el.$$help">
         <span>{{el.$$help.title}}</span>
-        <textarea v-model="el.innerHTML"></textarea>
+      
     </div>
 </template>
 
@@ -12,9 +12,6 @@ export default {
     setup(){
         let ctx = getCurrentInstance().ctx;
         let el = store.get("component");
-         watch(el,(value)=>{
-            // console.log(value)
-           })
         return {
            el
         }
