@@ -13,7 +13,7 @@ button, input, select, textarea,pre {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  color: inherit; outline: none;
 }
 #app{
   height:100%;

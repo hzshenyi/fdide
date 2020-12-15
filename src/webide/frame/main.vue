@@ -1,12 +1,11 @@
 <template>
     <fd-layout>
-    <fd-layout-pane style="height:50px">header</fd-layout-pane>
+    <fd-layout-pane style="height:50px"><resourceMenu></resourceMenu></fd-layout-pane>
     <fd-layout-pane  style="height:100%">
     <fd-layout lr>
            <fd-layout-pane  style="width:200px">left</fd-layout-pane>
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
-           
            </fd-layout-pane>
              <fd-layout-pane  style="width:200px">
                  <resourceProp></resourceProp>
@@ -24,15 +23,19 @@
 </style>
 <script>
 import {getCurrentInstance,watch} from 'vue'
+import resourceMenu from './resourceMenu.vue'
 import resourceEditor from './resourceEditor.vue'
 import resourceProp from './resourceProp.vue'
 import foot from './foot.vue'
 import store from '../lib/store.js'
+import Button from '../../../fdui/button/src/button.vue'
 export default {
     components: {
-    resourceEditor,resourceProp,foot
+    resourceMenu,resourceEditor,resourceProp,foot,
+        Button
   },
   setup(){
+  
 
   }
 }

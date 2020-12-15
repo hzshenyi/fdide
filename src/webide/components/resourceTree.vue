@@ -133,7 +133,7 @@
 
 <script>
 import { ref, reactive, getCurrentInstance } from "vue";
-import resourceTreeApi from "./resourceTree.js";
+import resourceTreeApi from "./ResourceTree.js";
 export default {
   name: "ResourceTree",
   props: {

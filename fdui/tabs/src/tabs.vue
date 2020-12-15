@@ -89,10 +89,8 @@ export default {
       });
       
       if(elActived){
-        setTimeout(() => {
-          //  elActived.data.isActived = true;
-        }, 1);
-       
+       if(elActived.tabClick)
+          elActived.tabClick(elActived);
         // elActived.isActived = true;
         
       }

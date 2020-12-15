@@ -20,6 +20,9 @@ export default {
     },
     name:{
       type:String,default:""
+    },
+    tabClick:{
+      type:Function,default:null
     }
   },
   setup() {
