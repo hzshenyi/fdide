@@ -3,7 +3,7 @@
     <fd-layout-pane style="height:700px">
         
          <fd-tabs  v-model="activeName">
-       <fd-tab-pane label="资源树" name="a">
+       <fd-tab-pane label="资源树" name="a"   style="height:500px;overflow-y:auto">
            <div  id="ideDesigner">
            <ResourceTree :elList="resourceTree"></ResourceTree>
           
@@ -12,14 +12,17 @@
        <fd-tab-pane label="源码"  name="b" style="height:500px" :tabClick="selectResource">
            <textarea style="width:100%;height:100%;border:0" v-model="resourceHtml"></textarea>
        </fd-tab-pane>
-        <fd-tab-pane label="预览"  name="c" style="height:700px" :tabClick="selectResource">
-          <ResourcePreview></ResourcePreview>
-       </fd-tab-pane>
+     
    </fd-tabs>
 
     </fd-layout-pane>
     <fd-layout-pane  style="height:500px">
- <ResourcePreview></ResourcePreview>
+         <fd-tabs  v-model="activeName1">
+              <fd-tab-pane label="预览" name="a">
+                   <ResourcePreview></ResourcePreview>
+              </fd-tab-pane>
+         </fd-tabs>
+
 
     </fd-layout-pane>
     </fd-layout>
@@ -43,7 +46,7 @@ export default {
     },
     setup(){
         let ctx = getCurrentInstance().ctx;
-        let activeName = ref("a"); 
+        let activeName = ref("a");   let activeName1 = ref("a"); 
         let resourceTree = store.get("resourceTree");//从全局中得到资源树json
         let resourceHtml = ref("");
         resource.load((html)=>{
@@ -61,7 +64,7 @@ export default {
              resourceHtml.value = resourceTreeDom.value.$$root.outerHTML;           
          }
         return {
-            store,activeName,resourceTree,resourceHtml,selectResource
+            store,activeName,activeName1,resourceTree,resourceHtml,selectResource
         }
     }
 }

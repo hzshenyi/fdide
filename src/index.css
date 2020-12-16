@@ -18,3 +18,8 @@ button, input, select, textarea,pre {
 #app{
   height:100%;
 }
+
+*, ::before, ::after{
+  box-sizing: content-box !important;
+}
+
