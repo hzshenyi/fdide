@@ -7,8 +7,9 @@
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
            </fd-layout-pane>
-             <fd-layout-pane  style="width:200px">
-                 <resourceProp></resourceProp>
+             <fd-layout-pane  style="width:500px">
+                  <resourcePreview></resourcePreview>
+                 <!-- <resourceProp></resourceProp> -->
                  </fd-layout-pane>
     </fd-layout>
     </fd-layout-pane>
@@ -26,12 +27,13 @@ import {getCurrentInstance,watch} from 'vue'
 import resourceMenu from './resourceMenu.vue'
 import resourceEditor from './resourceEditor.vue'
 import resourceProp from './resourceProp.vue'
+import resourcePreview from './resourcePreview.vue'
 import foot from './foot.vue'
 import store from '../lib/store.js'
 import Button from '../../../fdui/button/src/button.vue'
 export default {
     components: {
-    resourceMenu,resourceEditor,resourceProp,foot,
+    resourceMenu,resourceEditor,resourceProp,resourcePreview,foot,
         Button
   },
   setup(){

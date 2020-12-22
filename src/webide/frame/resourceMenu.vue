@@ -18,9 +18,9 @@ export default {
             resource.save("",html);
         }
         let copy = ()=>{
-           let resourceTreeDom = store.get("resourceTreeDom");
-           let html = resourceTreeDom.value.$$root.outerHTML; 
-            resource.save("",html);
+         let el = store.getValue("elementSelected");
+         resource.copy(el);
+      
         }
         return {
             save,copy

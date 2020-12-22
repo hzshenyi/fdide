@@ -22,7 +22,7 @@
     transition: .1s;
     font-weight: 500;
     padding: 12px 20px;
-    font-size: 14px;
+    font-size: inherit;
     border-radius: 4px;
 }
 .fd-button--primary{

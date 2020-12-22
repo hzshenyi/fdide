@@ -62,6 +62,29 @@ let domApi = {
         json[att.name] = att.value;
     }
     
-}
+},
+_createDom(el,domNew,type="append"){
+  if(typeof(domNew)==="string"){
+     domNew = new DOMParser().parseFromString(domNew, "text/html").querySelector("body").children[0];
+  }
+  let dom = el.$$targetDom;
+  let elCopy = {};
+  this._parseDom(domNew,elCopy);//拷贝json对象
+  delete elCopy.$$actived;
+  //allElList.push(elCopy);//将新对象加入到所有选择列表中
+  if(type==="append"){
+    dom.appendChild(domNew);
+    el.children = el.children||[];
+    el.children.push(elCopy);
+  }
+  if(type==="after"){
+    dom.after(domNew);
+    el.$$parent.splice(el.$$index+1,0,elCopy);
+  }
+  if(type==="last"){
+    dom.parentNode.appendChild(domNew);
+    el.$$parent.push(elCopy);
+  }
+ },
 };
 export default domApi

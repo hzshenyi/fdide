@@ -1,7 +1,7 @@
 <template>
   <div
     class="group"
-    @click.stop="resourceTreeApi.showHelp(el)"
+    @click.stop="resourceTreeApi.selectElement(el,elList,index)"
     :class="[
       `nodeType-${el.$$nodeType}`,
       { actived: el.$$actived, overed: el.$$overed, fold: el.$$fold },

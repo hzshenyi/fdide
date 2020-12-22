@@ -1,4 +1,5 @@
 import axios from 'axios'
+import domApi from './dom.js'
 let resource = {
     load(fn){
        this.get("",fn)
@@ -34,9 +35,15 @@ let resource = {
             return str.join("&");
           }
         }).then(res => {
-          fn();
+         // fn();
           console.log(res.data);
         });
+  },
+  copy(el){
+    let dom = el.$$targetDom;
+    let domCopy = dom.cloneNode(true);
+    domApi._createDom(el,domCopy,"after");
+
   }
 }
 export default resource
