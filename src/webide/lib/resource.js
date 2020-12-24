@@ -39,11 +39,14 @@ let resource = {
           console.log(res.data);
         });
   },
-  copy(el){
+  copyComponent(el,type="after"){
     let dom = el.$$targetDom;
     let domCopy = dom.cloneNode(true);
-    domApi._createDom(el,domCopy,"after");
-
+    domApi._createDom(el,domCopy,type);
+  },
+  addComponent(html,el,type="after"){
+    let dom = el.$$targetDom;
+    domApi._createDom(el,html,type);
   }
 }
 export default resource

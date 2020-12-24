@@ -1,6 +1,7 @@
 <template>
     <fd-button @click="save()">保存</fd-button>
-    <fd-button @click="copy()">复制</fd-button>
+    <fd-button @click="copyComponent()">复制</fd-button>
+    <fd-button @click="addComponent()">增加</fd-button>
 </template>
 <style>
 .fd-button{
@@ -17,13 +18,17 @@ export default {
            let html = resourceTreeDom.value.$$root.outerHTML; 
             resource.save("",html);
         }
-        let copy = ()=>{
+        let copyComponent = ()=>{
          let el = store.getValue("elementSelected");
-         resource.copy(el);
-      
+         resource.copyComponent(el)
+        }
+        let addComponent = ()=>{
+         let el = store.getValue("elementSelected");
+         let html = "<button>aa</button>"
+         resource.addComponent(html,el,"append")
         }
         return {
-            save,copy
+            save,copyComponent,addComponent
         }
     }
 }
