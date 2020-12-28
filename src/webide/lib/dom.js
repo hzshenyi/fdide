@@ -20,6 +20,11 @@ let domApi = {
     }
     return domJson;
   },
+  removeDom(el){
+    let dom = el.$$targetDom;
+    dom.parentNode.removeChild(dom);
+    el.$$parent.splice(el.$$index,1);
+   },
   _parseDom(dom,json) {
     json.$$targetDom = dom;
     this._transDomToJson(dom,json);

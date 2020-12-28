@@ -3,11 +3,13 @@
     <fd-layout-pane style="height:50px"><resourceMenu></resourceMenu></fd-layout-pane>
     <fd-layout-pane  style="height:100%">
     <fd-layout lr>
-           <fd-layout-pane  style="width:200px">left</fd-layout-pane>
+           <fd-layout-pane  style="width:300px">
+               <resourcePicklist></resourcePicklist>
+           </fd-layout-pane>
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
            </fd-layout-pane>
-             <fd-layout-pane  style="width:500px">
+             <fd-layout-pane  style="width:700px">
                   <resourcePreview></resourcePreview>
                  <!-- <resourceProp></resourceProp> -->
                  </fd-layout-pane>
@@ -25,16 +27,17 @@
 <script>
 import {getCurrentInstance,watch} from 'vue'
 import resourceMenu from './resourceMenu.vue'
+import resourcePicklist from './resourcePicklist.vue'
 import resourceEditor from './resourceEditor.vue'
 import resourceProp from './resourceProp.vue'
 import resourcePreview from './resourcePreview.vue'
 import foot from './foot.vue'
 import store from '../lib/store.js'
-import Button from '../../../fdui/button/src/button.vue'
+
 export default {
     components: {
-    resourceMenu,resourceEditor,resourceProp,resourcePreview,foot,
-        Button
+    resourcePicklist,resourceMenu,resourceEditor,resourceProp,resourcePreview,foot
+        
   },
   setup(){
   

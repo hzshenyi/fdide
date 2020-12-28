@@ -43,10 +43,19 @@ let resource = {
     let dom = el.$$targetDom;
     let domCopy = dom.cloneNode(true);
     domApi._createDom(el,domCopy,type);
+    this.saveResource();
   },
   addComponent(html,el,type="after"){
     let dom = el.$$targetDom;
     domApi._createDom(el,html,type);
+    this.saveResource();
+  },
+  removeComponent(el){
+    domApi.removeDom(el);
+    this.saveResource();
+  },
+  saveResource(){
+    document.getElementById("saveResource").click()
   }
 }
 export default resource

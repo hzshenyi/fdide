@@ -26,14 +26,15 @@
         ></span
       >
     </div>
-    <ResourceTree v-if="el.children" :elList="el.children"></ResourceTree>
-    <span class="prop1" v-if="!el.children"
+     <span class="prop1" v-if="!el.children||true"
       ><span style="width: 100%">{{ el.innerHTML }}</span
       ><input
         type="text"
         v-model="el.innerHTML"
         @change="domChangeInnerHtml(el)"
     /></span>
+    <ResourceTree v-if="el.children" :elList="el.children"></ResourceTree>
+   
     <span class="tagEnd" v-show="el.$$nodeType != 3"
       >&lt;/{{ el.tagName }}></span
     >
@@ -134,6 +135,7 @@
 <script>
 import { ref, reactive, getCurrentInstance } from "vue";
 import resourceTreeApi from "./ResourceTree.js";
+import resource from "../lib/resource.js"
 export default {
   name: "ResourceTree",
   props: {
@@ -160,6 +162,8 @@ export default {
     };
     let domChange = (el, propName) => {
       el.$$targetDom.setAttribute(propName, el[propName]);
+      resource.saveResource();
+      
     };
     let domChangeInnerHtml = (el) => {
       if (el.$$targetDom.nodeType == 3) {
@@ -168,6 +172,7 @@ export default {
       } else {
         el.$$targetDom.innerHTML = el.innerHTML;
       }
+      resource.saveResource();
     };
     let editGroup = () => {};
     return {

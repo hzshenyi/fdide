@@ -1,7 +1,8 @@
 <template>
-    <fd-button @click="save()">保存</fd-button>
+    <fd-button @click="save()" id="saveResource">保存</fd-button>
     <fd-button @click="copyComponent()">复制</fd-button>
     <fd-button @click="addComponent()">增加</fd-button>
+    <fd-button @click="removeComponent()">删除</fd-button>
 </template>
 <style>
 .fd-button{
@@ -24,11 +25,15 @@ export default {
         }
         let addComponent = ()=>{
          let el = store.getValue("elementSelected");
-         let html = "<button>aa</button>"
+         let html = "<button>aa</button>";
          resource.addComponent(html,el,"append")
         }
+        let removeComponent = ()=>{
+            let el = store.getValue("elementSelected");
+             resource.removeComponent(el)
+        }
         return {
-            save,copyComponent,addComponent
+            save,copyComponent,addComponent,removeComponent
         }
     }
 }
