@@ -1,7 +1,7 @@
 <template>
     <fd-button @click="save()" id="saveResource">保存</fd-button>
     <fd-button @click="copyComponent()">复制</fd-button>
-    <fd-button @click="addComponent()">增加</fd-button>
+
     <fd-button @click="removeComponent()">删除</fd-button>
 </template>
 <style>

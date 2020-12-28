@@ -32,7 +32,7 @@ export default {
        let activeName = "a"
         let addComponent = (el)=>{
          let elSelected = store.getValue("elementSelected");
-         let html = el.html;debugger
+         let html = el.html;
          resource.addComponent(html,elSelected,"append")
         }
        return {data,activeName,addComponent}

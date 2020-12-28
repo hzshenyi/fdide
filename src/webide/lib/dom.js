@@ -60,6 +60,14 @@ let domApi = {
     json["tagName"] = dom.localName;
     if(dom.children.length==0){
        json["innerHTML"] = dom.innerHTML;
+      // if(dom.innerHTML!=""){
+      //    json.children=[{
+      //     "tagName":"text",
+      //     "innerHTML":dom.innerHTML,
+      //     "$$nodeType":3,
+      //     "$$targetDom":dom
+      //    }]
+      // }
     }
     let attList = dom.attributes;
     for(let i = 0;i<attList.length;i++){
