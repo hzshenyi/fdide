@@ -2,16 +2,17 @@
   <fd-layout>
     <fd-layout-pane>
          <fd-tabs  v-model="activeName">
-       <fd-tab-pane label="控件列表" name="a">
+              <fd-tab-pane label="属性"  name="a">
+                  <resourceProp></resourceProp>
+       </fd-tab-pane>
+       <fd-tab-pane label="控件列表" name="b">
            <div  id="ideDesigner">
            <fd-button v-for="el in data" @click="addComponent(el)">
                {{el.title}}
            </fd-button>
            </div>
        </fd-tab-pane>
-       <fd-tab-pane label="资源树"  name="b">
-                  <resourceProp></resourceProp>
-       </fd-tab-pane>
+      
    </fd-tabs>
     </fd-layout-pane>
   

@@ -4,14 +4,7 @@
     <fd-layout-pane  style="height:100%">
     <fd-layout lr>
            <fd-layout-pane  style="width:300px">
-               <div style="height:50%">
- <resourcePicklist></resourcePicklist>
-               </div>
-               <div>
- <resourceProp></resourceProp>
-               </div>
-              
-       
+               <resourcePicklist></resourcePicklist>
            </fd-layout-pane>
            <fd-layout-pane  style="width:100%">
                <resourceEditor></resourceEditor>
