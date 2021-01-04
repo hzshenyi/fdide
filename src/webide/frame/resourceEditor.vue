@@ -48,8 +48,8 @@ export default {
            let resourceTreeDom = store.get("resourceTreeDom");
              resourceHtml.value = resourceTreeDom.value.$$root.outerHTML;           
          }
-        const h = (screen.height-250)+"px";
-        data.style = `height:${h};overflow-x:hidden;overflow-y:hidden`;
+        const h = (screen.height-620)+"px";
+        data.style = `height:${h};overflow-y:auto`;
         return {
             store,data,activeName,activeName1,resourceTree,resourceHtml,selectResource
         }

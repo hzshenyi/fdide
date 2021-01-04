@@ -1,9 +1,9 @@
 <template>
-<div>test <a-tabs type="card" @change="callback">
-    <a-tab-pane key="1" tab="Tab 1">
-      Content of Tab Pane 1
-    <fd-button>无标题<button>test</button></fd-button></a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">Content of Tab Pane 2    </a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3    </a-tab-pane>
-  <a-tab-pane key="4" tab="Tab 4">Content of Tab Pane 4</a-tab-pane><a-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</a-tab-pane></a-tabs></div>
+<div>  <a-collapse v-model:activekey="activeKey">
+    <a-collapse-panel key="1" header="This is panel header 1">abcd</a-collapse-panel>
+    <a-collapse-panel key="2" header="This is panel header 2" :disabled="false">
+      b
+    </a-collapse-panel>
+    <a-collapse-panel key="3" header="This is panel header 3" disabled="">   s</a-collapse-panel>
+  <a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel><a-collapse-panel key="4" header="新增面板">test</a-collapse-panel></a-collapse><fd-layout><fd-tabs v-model="activeName"><fd-tab-pane label="a" name="a">内容a</fd-tab-pane><fd-tab-pane label="b" name="b">内容b</fd-tab-pane></fd-tabs></fd-layout></div>
 </template>

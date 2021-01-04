@@ -1,56 +1,55 @@
 <template>
   <fd-layout>
     <fd-layout-pane>
-         <fd-tabs  v-model="activeName">
-              <fd-tab-pane label="属性"  name="a">
-                  <resourceProp></resourceProp>
-       </fd-tab-pane>
-       <fd-tab-pane label="控件列表" name="b">
-           <div  id="ideDesigner">
-           <fd-button v-for="el in data" @click="addComponent(el)">
-               {{el.title}}
-           </fd-button>
-           </div>
-       </fd-tab-pane>
-      
-   </fd-tabs>
+      <fd-tabs v-model="activeName">
+         <fd-tab-pane label="控件列表" name="a">
+          <div id="ideDesigner">
+            <a-collapse>
+              <a-collapse-panel
+                :key="index"
+                :header="el.title"
+                v-for="(el, index) in data"
+              >
+                <a-button
+                  v-for="el1 in el.children"
+                  @click="addComponent(el1)"
+                  style="width: 70px; margin-top: 2px;margin-right:2px;font-size:13px"
+                >
+                  <template #icon><SearchOutlined />{{ el1.title }}</template>
+                </a-button>
+              </a-collapse-panel>
+            </a-collapse>
+          </div>
+        </fd-tab-pane>
+        <fd-tab-pane label="资源树" name="b">
+         
+        </fd-tab-pane>
+       
+      </fd-tabs>
     </fd-layout-pane>
-  
-    </fd-layout>
+  </fd-layout>
 </template>
-<style scoped>
-</style>
+<style scoped></style>
 <script>
-import {ref,reactive,getCurrentInstance,watch, computed} from 'vue' 
-import resource from '../lib/resource.js'
-import store from '../lib/store.js'
-import resourceProp from './resourceProp.vue'
+import { ref, reactive, getCurrentInstance, watch, computed } from "vue";
+import resource from "../lib/resource.js";
+import store from "../lib/store.js";
+import componentPicklist from "../config/componentPicklist/fd.js";
+
 export default {
-    components:{
-        resourceProp
-    },
-    setup(){
-       let data = [{title:"容器",html:"<fd-layout></fd-layout>"},
-       {title:"标签表格",html:"<fd-tabs  v-model='activeName'><fd-tab-pane label='a' name='a'>内容a</fd-tab-pane><fd-tab-pane label='b' name='b'>内容b</fd-tab-pane></fd-tabs>"},
-       {title:"按钮",html:"<fd-button>无标题</fd-button>"},
-       {title:"链接",html:`<a-tabs type="card" @change="callback">
-    <a-tab-pane key="1" tab="Tab 1">
-      Content of Tab Pane 1
-    </a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">
-      Content of Tab Pane 2
-    </a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">
-      Content of Tab Pane 3
-    </a-tab-pane>
-  </a-tabs>`}];
-       let activeName = "a"
-        let addComponent = (el)=>{
-         let elSelected = store.getValue("elementSelected");
-         let html = el.html;
-         resource.addComponent(html,elSelected,"append")
-        }
-       return {data,activeName,addComponent}
-    }
-}
+  components: {
+    
+  },
+  setup() {
+    let data = componentPicklist;
+    let activeName = "a";
+    let activeKey = [1];
+    let addComponent = (el) => {
+      let elSelected = store.getValue("elementSelected");
+      let html = el.html;
+      resource.addComponent(html, elSelected, "append");
+    };
+    return { data, activeName, activeKey, addComponent };
+  },
+};
 </script>

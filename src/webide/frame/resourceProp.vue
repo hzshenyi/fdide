@@ -1,7 +1,9 @@
 <template>
     <div v-if="el.$$help">
-        <span>{{el.$$help.title}}</span>
-      <fd-button v-for="el1 in el.$$help.buttons" @click="executeAction(el1)">{{el1.title}}</fd-button>
+        <div> <span>{{el.$$help.title}}</span></div>
+        <div><fd-button v-for="el1 in el.$$help.buttons" @click="executeAction(el1)">{{el1.title}}</fd-button></div>
+       
+      
     </div>
 </template>
 

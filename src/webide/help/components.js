@@ -1,7 +1,7 @@
 let components = {
     api:[
         {
-            "tagName":"a-collapse","title":"折叠"
+            "tagName":"a-collapse","title":"折叠面板","buttons":[{title:"增加子面板",html:`<a-collapse-panel key="index" header="新增面板">test</a-collapse-panel>`}]
         },
         {
             "tagName":"fd-button","title":"按钮","buttons":[{title:"子按钮",html:`<button>test</button>`}]

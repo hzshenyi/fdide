@@ -10,7 +10,7 @@
     @mouseover.stop="el.$$overed = true"
     @mouseout="el.$$overed = false"
   >
-    <span v-if="el.children">-</span>
+    <span v-if="el.children"  @click="fold(el)">-</span>
     <div class="line">
       <span v-show="el.$$nodeType != 3"
         >&lt;{{ el.tagName }}
@@ -29,9 +29,9 @@
      <span class="prop1" v-if="!el.children"
       ><span style="width: 100%">{{ el.innerHTML }}</span
       ><input
-        type="text"
+        type="text" class="innerHTML"
         v-model="el.innerHTML"
-        @change="domChangeInnerHtml(el)"
+        @change="domChangeInnerHtml(el)" 
     /></span>
     <!-- 如果有子控件并且有innerHTML则显示一个不能编辑的html -->
      <div class="group" v-if="el.children&&el.innerHTML"
@@ -98,6 +98,7 @@
   display: inline-block;
   position: relative;
 }
+
 #ideDesigner .prop2 {
   display: inline-block;
   position: relative;
@@ -126,6 +127,10 @@
   border: 1px solid rgb(167, 159, 159);
   width: 100%;
 }
+#ideDesigner input.innerHTML:focus {
+  width:300%;
+}
+
 #ideDesigner .tagEnd {
   margin-left: 4px;
 }
@@ -179,11 +184,14 @@ export default {
       resource.saveResource();
     };
     let editGroup = () => {};
+     let fold = (el)=>{
+        el.$$fold = !el.$$fold;
+    }
     return {
       getPropList,
       domChange,
       domChangeInnerHtml,
-      editGroup,
+      editGroup,fold,
       resourceTreeApi,
     };
   },

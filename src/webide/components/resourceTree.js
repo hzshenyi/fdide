@@ -7,7 +7,7 @@ let resourceTree = {
         let component = help.getComponent(el.tagName);
        
         el.$$help = component;
-       debugger
+       
         store.put("component",el)
 
     //     watch(el,(value)=>{
