@@ -16,7 +16,11 @@ let store = {
        return this[key];
     },
     getValue(key){
-       return this[key].value;
+        if(this[key]){
+            return this[key].value;
+        }else{
+            return null;
+        }
     }
 }
 export default store

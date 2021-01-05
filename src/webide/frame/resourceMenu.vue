@@ -24,8 +24,14 @@ export default {
          let el = store.getValue("elementSelected");
          resource.copyComponent(el)
         }
-        let cutComponent = ()=>{
+        let cutComponent = ()=>{          
+         let elCutted = store.get("elementCuted");
+         if(elCutted){
+            elCutted.value.$$cutted = false;
+         }
          let el = store.getValue("elementSelected");
+        
+         el.$$cutted = true;//标记为剪切
          store.put("elementCuted",el);
         // resource.cutComponent(el)
         }

@@ -4,7 +4,7 @@
     @click.stop="resourceTreeApi.selectElement(el,elList,index)"
     :class="[
       `nodeType-${el.$$nodeType}`,
-      { actived: el.$$actived, overed: el.$$overed, fold: el.$$fold },
+      { actived: el.$$actived, overed: el.$$overed, fold: el.$$fold,cutted:el.$$cutted },
     ]"
     v-for="(el, index) in elList"
     @mouseover.stop="el.$$overed = true"
@@ -64,6 +64,9 @@
 #ideDesigner .group.actived {
   border: solid 1px blue;
   background-color: ivory;
+}
+#ideDesigner .group.cutted {
+filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.2;
 }
 #ideDesigner .group.fold {
   height: 24px;

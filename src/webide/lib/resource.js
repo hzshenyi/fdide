@@ -52,13 +52,11 @@ let resource = {
     //this.saveResource();
   },
   pasteComponent(el,elCuted){
-   // el.$$targetDom.appendChild(elCuted.$$targetDom);
+    if(!elCuted){
+      return ;
+    }
     domApi._createDom(el,elCuted.$$targetDom.cloneNode(true),"append");
     this.removeComponent(elCuted);
-    //let dom = el.$$targetDom;
-    //let domCopy = dom.cloneNode(true);
-    //domApi._createDom(el,domCopy,type);
-    //this.saveResource();
   },
   
   addComponent(html,el,type="after"){

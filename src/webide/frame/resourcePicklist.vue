@@ -15,7 +15,7 @@
                   @click="addComponent(el1)"
                   style="width: 70px; margin-top: 2px;margin-right:2px;font-size:13px"
                 >
-                  <template #icon><SearchOutlined />{{ el1.title }}</template>
+                  <template #icon>{{ el1.title }}</template>
                 </a-button>
               </a-collapse-panel>
             </a-collapse>
@@ -34,7 +34,7 @@
 import { ref, reactive, getCurrentInstance, watch, computed } from "vue";
 import resource from "../lib/resource.js";
 import store from "../lib/store.js";
-import componentPicklist from "../config/componentPicklist/fd.js";
+import componentPicklist from "../config/componentPicklist/ant2.js";
 
 export default {
   components: {
