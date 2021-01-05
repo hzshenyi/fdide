@@ -45,6 +45,22 @@ let resource = {
     domApi._createDom(el,domCopy,type);
     this.saveResource();
   },
+  cutComponent(el,type="after"){
+    //let dom = el.$$targetDom;
+    //let domCopy = dom.cloneNode(true);
+    //domApi._createDom(el,domCopy,type);
+    //this.saveResource();
+  },
+  pasteComponent(el,elCuted){
+   // el.$$targetDom.appendChild(elCuted.$$targetDom);
+    domApi._createDom(el,elCuted.$$targetDom.cloneNode(true),"append");
+    this.removeComponent(elCuted);
+    //let dom = el.$$targetDom;
+    //let domCopy = dom.cloneNode(true);
+    //domApi._createDom(el,domCopy,type);
+    //this.saveResource();
+  },
+  
   addComponent(html,el,type="after"){
     let dom = el.$$targetDom;
     domApi._createDom(el,html,type);

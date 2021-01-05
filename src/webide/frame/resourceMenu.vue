@@ -1,7 +1,8 @@
 <template>
     <fd-button @click="save()" id="saveResource">保存</fd-button>
     <fd-button @click="copyComponent()">复制</fd-button>
-
+    <fd-button @click="cutComponent()">剪切</fd-button>
+    <fd-button @click="pasteComponent()">粘贴</fd-button>
     <fd-button @click="removeComponent()">删除</fd-button>
 </template>
 <style>
@@ -23,6 +24,17 @@ export default {
          let el = store.getValue("elementSelected");
          resource.copyComponent(el)
         }
+        let cutComponent = ()=>{
+         let el = store.getValue("elementSelected");
+         store.put("elementCuted",el);
+        // resource.cutComponent(el)
+        }
+         let pasteComponent = ()=>{
+         let el = store.getValue("elementSelected");
+         let elementCuted = store.getValue("elementCuted");
+        
+         resource.pasteComponent(el,elementCuted);
+        }
         let addComponent = ()=>{
          let el = store.getValue("elementSelected");
          let html = "<button>aa</button>";
@@ -33,7 +45,7 @@ export default {
              resource.removeComponent(el)
         }
         return {
-            save,copyComponent,addComponent,removeComponent
+            save,copyComponent,cutComponent,pasteComponent,addComponent,removeComponent
         }
     }
 }
