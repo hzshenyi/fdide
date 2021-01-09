@@ -16,6 +16,11 @@
     </fd-layout>
 </template>
 <style scoped>
+.fd-layout-pane {
+  border: 0px rgb(38, 52, 185) solid;
+
+  margin: 2px;
+}
 </style>
 <script>
 import {ref,reactive,getCurrentInstance,watch, computed} from 'vue' 

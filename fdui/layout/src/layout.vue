@@ -3,7 +3,7 @@
       <slot></slot>
   </div>
 </template>
-<style   scoped>
+<style>
 .fd-layout{
     width:100%;height:100%;border: 0px red solid;display: flex;flex-direction: column;
 }
@@ -11,7 +11,7 @@
     border: 0px red solid;display: flex;flex-direction:row;
 }
 .fd-layout-pane{
-    border:0px rgb(207, 205, 205) solid;border-color:rgb(207, 205, 205);margin:2px;
+    border:0px rgb(207, 205, 205) solid;border-color:rgb(207, 205, 205);
 }
 
 .fd-layout.lr{

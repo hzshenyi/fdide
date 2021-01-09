@@ -1,9 +1,17 @@
 <template>
-    <fd-button @click="save()" id="saveResource">保存</fd-button>
+<div> <span style="color:white;width:200px;margin-left:10px;margin-right:100px">FDV1.0 前端开发平台</span> <span><a-button-group :size="size">
+    <a-button  type="primary" @click="save()" id="saveResource"> <LeftOutlined />保存 </a-button>
+    <a-button  type="primary" @click="copyComponent()"> 复制<RightOutlined /> </a-button>
+    <a-button   type="primary" @click="cutComponent()"> 剪切<RightOutlined /> </a-button>
+    <a-button  type="primary" @click="pasteComponent()"> 粘贴<RightOutlined /> </a-button>
+    <a-button  type="primary" @click="removeComponent()"> 删除<RightOutlined /> </a-button>
+  </a-button-group></span> </div>
+  
+    <!-- <fd-button @click="save()" id="saveResource">保存</fd-button>
     <fd-button @click="copyComponent()">复制</fd-button>
     <fd-button @click="cutComponent()">剪切</fd-button>
     <fd-button @click="pasteComponent()">粘贴</fd-button>
-    <fd-button @click="removeComponent()">删除</fd-button>
+    <fd-button @click="removeComponent()">删除</fd-button> -->
 </template>
 <style>
 .fd-button{
