@@ -51,11 +51,12 @@ let resource = {
     //domApi._createDom(el,domCopy,type);
     //this.saveResource();
   },
-  pasteComponent(el,elCuted){
+  pasteComponent(el,elCuted,type){
     if(!elCuted){
       return ;
     }
-    domApi._createDom(el,elCuted.$$targetDom.cloneNode(true),"append");
+  //  delete elCuted.$$cutted
+    domApi._createDom(el,elCuted.$$targetDom.cloneNode(true),type);
     this.removeComponent(elCuted);
   },
   
@@ -66,6 +67,10 @@ let resource = {
   },
   removeComponent(el){
     domApi.removeDom(el);
+    this.saveResource();
+  },
+  moveComponent(el){
+    domApi.moveDom(el);
     this.saveResource();
   },
   saveResource(){

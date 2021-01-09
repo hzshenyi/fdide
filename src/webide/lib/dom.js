@@ -25,6 +25,18 @@ let domApi = {
     dom.parentNode.removeChild(dom);
     el.$$parent.splice(el.$$index,1);
    },
+   moveDom(el){
+    let arr = el.$$parent
+    let index1 = el.$$index;
+    let index2 = index1 - 1;
+    let dom1 = el.$$targetDom;
+    let dom2 = arr[index2].$$targetDom;
+    let el2 = arr[index2];
+    dom2.before(dom1)
+    el.$$index = index2;
+    el2.$$index = index1;
+    arr[index1] = arr.splice(index2, 1, arr[index1])[0];
+   },
   _parseDom(dom,json) {
     json.$$targetDom = dom;
     this._transDomToJson(dom,json);
@@ -93,6 +105,10 @@ _createDom(el,domNew,type="append"){
   if(type==="after"){
     dom.after(domNew);
     el.$$parent.splice(el.$$index+1,0,elCopy);
+  }
+  if(type==="before"){
+    dom.before(domNew);
+    el.$$parent.splice(el.$$index,0,elCopy);
   }
   if(type==="last"){
     dom.parentNode.appendChild(domNew);

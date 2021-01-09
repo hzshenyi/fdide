@@ -4,7 +4,9 @@
     <a-button  type="primary" @click="copyComponent()"> 复制<RightOutlined /> </a-button>
     <a-button   type="primary" @click="cutComponent()"> 剪切<RightOutlined /> </a-button>
     <a-button  type="primary" @click="pasteComponent()"> 粘贴<RightOutlined /> </a-button>
+     <a-button  type="primary" @click="pasteComponent('before')"> 粘贴到前面<RightOutlined /> </a-button>
     <a-button  type="primary" @click="removeComponent()"> 删除<RightOutlined /> </a-button>
+    <a-button  type="primary" @click="moveComponent()"> 上移<RightOutlined /> </a-button>
   </a-button-group></span> </div>
   
     <!-- <fd-button @click="save()" id="saveResource">保存</fd-button>
@@ -43,11 +45,10 @@ export default {
          store.put("elementCuted",el);
         // resource.cutComponent(el)
         }
-         let pasteComponent = ()=>{
+        let pasteComponent = (type="append")=>{
          let el = store.getValue("elementSelected");
          let elementCuted = store.getValue("elementCuted");
-        
-         resource.pasteComponent(el,elementCuted);
+         resource.pasteComponent(el,elementCuted,type);
         }
         let addComponent = ()=>{
          let el = store.getValue("elementSelected");
@@ -58,8 +59,13 @@ export default {
             let el = store.getValue("elementSelected");
              resource.removeComponent(el)
         }
+        let moveComponent = ()=>{//上移
+            let el = store.getValue("elementSelected");
+            resource.moveComponent(el);
+       
+        }
         return {
-            save,copyComponent,cutComponent,pasteComponent,addComponent,removeComponent
+            save,copyComponent,cutComponent,pasteComponent,addComponent,removeComponent,moveComponent
         }
     }
 }
