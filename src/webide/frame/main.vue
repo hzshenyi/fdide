@@ -15,7 +15,7 @@
                <!-- 资源设计 -->
               <resourceEditor></resourceEditor>
             </fd-layout-pane>
-            <fd-layout-pane style="height: 400px; overflow-y: auto">
+            <fd-layout-pane style="height: 400px;overflow-y: auto">
                <!-- 资源预览 -->
               <resourcePreview></resourcePreview>
             </fd-layout-pane>

@@ -26,8 +26,11 @@ let domApi = {
     el.$$parent.splice(el.$$index,1);
    },
    moveDom(el){
-    let arr = el.$$parent
+    let arr = el.$$parent;
     let index1 = el.$$index;
+    if(index1==0){
+      return;
+    }
     let index2 = index1 - 1;
     let dom1 = el.$$targetDom;
     let dom2 = arr[index2].$$targetDom;

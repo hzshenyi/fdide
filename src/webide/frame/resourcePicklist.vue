@@ -4,19 +4,19 @@
       <fd-tabs v-model="activeName">
          <fd-tab-pane label="控件列表" name="a">
           <div id="ideDesigner">
-            <a-collapse>
+            <a-collapse v-model:activeKey="activeKey">
               <a-collapse-panel
-                :key="index"
+                key="1"
                 :header="el.title"
                 v-for="(el, index) in data"
-              >
-                <a-button
-                  v-for="el1 in el.children"
-                  @click="addComponent(el1)"
-                  style="width: 70px; margin-top: 2px;margin-right:2px;font-size:13px"
-                >
-                  <template #icon>{{ el1.title }}</template>
-                </a-button>
+              >             
+ <a-list bordered :data-source="el.children" style="cursor:pointer">
+      <template #renderItem="{ item, index }">
+        <a-list-item @click="addComponent(item)">{{ item.title }}</a-list-item>
+      </template>
+      
+    </a-list>
+                
               </a-collapse-panel>
             </a-collapse>
           </div>
@@ -29,7 +29,14 @@
     </fd-layout-pane>
   </fd-layout>
 </template>
-<style scoped></style>
+<style>
+.ant-collapse-content{
+  border:0 !important;
+}
+.ant-collapse-content > .ant-collapse-content-box{
+  padding: 0 !important;
+}
+</style>
 <script>
 import { ref, reactive, getCurrentInstance, watch, computed } from "vue";
 import resource from "../lib/resource.js";
@@ -43,7 +50,7 @@ export default {
   setup() {
     let data = componentPicklist;
     let activeName = "a";
-    let activeKey = [1];
+    let activeKey = [1,2,3];
     let addComponent = (el) => {
       let elSelected = store.getValue("elementSelected");
       let html = el.html;

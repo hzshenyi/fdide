@@ -1,12 +1,12 @@
 <template>
-<div> <span style="color:white;width:200px;margin-left:10px;margin-right:100px">FDV1.0 前端开发平台</span> <span><a-button-group :size="size">
-    <a-button  type="primary" @click="save()" id="saveResource"> <LeftOutlined />保存 </a-button>
-    <a-button  type="primary" @click="copyComponent()"> 复制<RightOutlined /> </a-button>
-    <a-button   type="primary" @click="cutComponent()"> 剪切<RightOutlined /> </a-button>
-    <a-button  type="primary" @click="pasteComponent()"> 粘贴<RightOutlined /> </a-button>
-     <a-button  type="primary" @click="pasteComponent('before')"> 粘贴到前面<RightOutlined /> </a-button>
-    <a-button  type="primary" @click="removeComponent()"> 删除<RightOutlined /> </a-button>
-    <a-button  type="primary" @click="moveComponent()"> 上移<RightOutlined /> </a-button>
+<div> <span style="color:white;width:200px;margin-left:10px;margin-right:100px">FDV1.0 前端开发平台</span> <span><a-button-group>
+    <a-button  type="primary" @click="save()" id="saveResource">保存 </a-button>
+    <a-button  type="primary" @click="copyComponent()"> 复制</a-button>
+    <a-button   type="primary" @click="cutComponent()"> 剪切</a-button>
+    <a-button  type="primary" @click="pasteComponent()"> 粘贴</a-button>
+     <a-button  type="primary" @click="pasteComponent('before')"> 粘贴到前面</a-button>
+    <a-button  type="primary" @click="removeComponent()"> 删除</a-button>
+    <a-button  type="primary" @click="moveComponent()"> 上移</a-button>
   </a-button-group></span> </div>
   
     <!-- <fd-button @click="save()" id="saveResource">保存</fd-button>
