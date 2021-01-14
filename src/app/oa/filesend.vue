@@ -1,3 +1,3 @@
 <template>
-<div></div>
+<div style="height:100%"></div>
 </template>

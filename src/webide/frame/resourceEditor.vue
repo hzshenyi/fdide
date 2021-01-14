@@ -1,7 +1,7 @@
 <template>
  <fd-layout>
     <fd-layout-pane>
-         <fd-tabs  v-model="activeName">
+         <fd-tabs  v-model="activeName1">
        <fd-tab-pane label="对象树" name="a"   :style="data.style">
            <div  id="ideDesigner">
            <ResourceTree :elList="resourceTree"></ResourceTree>

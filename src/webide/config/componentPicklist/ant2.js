@@ -1,19 +1,25 @@
 let data = [{
     title: "布局",
     children: [{
-            title: "主容器",
-            html: `<a-layout>
-            <a-layout-header>Header</a-layout-header>
-            <a-layout-content>Content</a-layout-content>
-            <a-layout-footer>Footer</a-layout-footer>
-          </a-layout>`
-        }, {
-            title: "栅格",
+            title: "上下布局",
+            html: `<fd-layout><fd-layout-pane style="height: 50px;border: 1px dotted rgb(218 214 214);"></fd-layout-pane><fd-layout-pane style="height: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
+        },{
+          title: "左右布局",
+          html: `<fd-layout lr><fd-layout-pane style="width: 250px;border: 1px dotted rgb(218 214 214);"></fd-layout-pane><fd-layout-pane style="width: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
+      }, {
+            title: "2列栅格",
             html: ` <a-row>
             <a-col :span="12">列1</a-col>
             <a-col :span="12">列2</a-col>
           </a-row>`
-        },{
+        }, {
+          title: "4列栅格",
+          html: ` <a-row>
+          <a-col :span="6">列1</a-col>
+          <a-col :span="6">列2</a-col> <a-col :span="6">列3</a-col>
+          <a-col :span="6">列4</a-col>
+        </a-row>`
+      },{
             title:"标签页",
             html:`<a-tabs type="card" @change="callback">
             <a-tab-pane key="1" tab="标题1"></a-tab-pane>
@@ -22,7 +28,7 @@ let data = [{
           </a-tabs>`
         },{
             title:"卡片",
-            html:`<a-card title="标题" style="width: 300px;height:300px"></a-card>`
+            html:`<a-card title="标题" style="width: 100%;height:100%"></a-card>`
         }
     ]
 

@@ -1,7 +1,7 @@
 <template>
   <fd-layout>
     <fd-layout-pane>
-      <fd-tabs v-model="activeName">
+      <fd-tabs v-model="resourceTreeName">
          <fd-tab-pane label="控件列表" name="a">
           <div id="ideDesigner">
             <a-collapse v-model:activeKey="activeKey">
@@ -24,7 +24,9 @@
         <fd-tab-pane label="资源树" name="b">
          
         </fd-tab-pane>
-       
+        <fd-tab-pane label="模板列表" name="c">
+         
+        </fd-tab-pane>
       </fd-tabs>
     </fd-layout-pane>
   </fd-layout>
@@ -49,14 +51,14 @@ export default {
   },
   setup() {
     let data = componentPicklist;
-    let activeName = "a";
+    let resourceTreeName = ref("a");
     let activeKey = [1,2,3];
     let addComponent = (el) => {
       let elSelected = store.getValue("elementSelected");
       let html = el.html;
       resource.addComponent(html, elSelected, "append");
     };
-    return { data, activeName, activeKey, addComponent };
+    return { data, resourceTreeName, activeKey, addComponent };
   },
 };
 </script>
