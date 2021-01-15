@@ -1,5 +1,5 @@
 <template>
-<div> <span style="color:white;width:200px;margin-left:10px;margin-right:100px">FDV1.0 前端开发平台</span> <span><a-button-group>
+<div> <span style="color:white;width:200px;margin-left:10px;margin-right:100px">FDV1.0 代码组件化设计工具</span> <span><a-button-group>
     <a-button  type="primary" @click="save()" id="saveResource">保存 </a-button>
     <a-button  type="primary" @click="copyComponent()"> 复制</a-button>
     <a-button   type="primary" @click="cutComponent()"> 剪切</a-button>

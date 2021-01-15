@@ -8,7 +8,7 @@
               <a-collapse-panel
                 key="1"
                 :header="el.title"
-                v-for="(el, index) in data"
+                v-for="(el, index) in componentPicklist"
               >             
  <a-list bordered :data-source="el.children" style="cursor:pointer">
       <template #renderItem="{ item, index }">
@@ -25,7 +25,23 @@
          
         </fd-tab-pane>
         <fd-tab-pane label="模板列表" name="c">
-         
+            <div id="templateList">
+            <a-collapse v-model:activeKey="activeKey">
+              <a-collapse-panel
+                key="1"
+                :header="el.title"
+                v-for="(el, index) in templatePicklist"
+              >             
+ <a-list bordered :data-source="el.children" style="cursor:pointer">
+      <template #renderItem="{ item, index }">
+        <a-list-item @click="addComponent(item)">{{ item.title }}</a-list-item>
+      </template>
+      
+    </a-list>
+                
+              </a-collapse-panel>
+            </a-collapse>
+          </div>
         </fd-tab-pane>
       </fd-tabs>
     </fd-layout-pane>
@@ -43,7 +59,8 @@
 import { ref, reactive, getCurrentInstance, watch, computed } from "vue";
 import resource from "../lib/resource.js";
 import store from "../lib/store.js";
-import componentPicklist from "../config/componentPicklist/ant2.js";
+import componentPicklist from "../config/component/ant2.js";
+import templatePicklist from "../config/template/ant2.js";
 
 export default {
   components: {
@@ -58,7 +75,7 @@ export default {
       let html = el.html;
       resource.addComponent(html, elSelected, "append");
     };
-    return { data, resourceTreeName, activeKey, addComponent };
+    return { data,componentPicklist, templatePicklist,resourceTreeName, activeKey, addComponent };
   },
 };
 </script>
