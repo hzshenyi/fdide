@@ -1,0 +1,1122 @@
+{
+    "success": true,
+    "message": null,
+    "resultData": [
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "陈宗勇|chenzynb,虞光辉|yugh,陈敏|chenmin10,王显宇|wangxy,钱健|qianj,章栋炯|zhangdj_nb,屠骏|tujun,柳小明|liuxm,杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": [
+              "章栋炯|zhangdj_nb"
+            ],
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "屠骏|tujun"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": [
+              "章栋炯|zhangdj_nb,陈敏|chenmin10,杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "柳小明|liuxm"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": [
+              "陈宗勇|chenzynb,虞光辉|yugh,陈敏|chenmin10,王显宇|wangxy,钱健|qianj,章栋炯|zhangdj_nb,屠骏|tujun,柳小明|liuxm,杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "梁黔宁|liangqn"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": [
+              "陈宗勇|chenzynb,虞光辉|yugh,陈敏|chenmin10,王显宇|wangxy,钱健|qianj,章栋炯|zhangdj_nb,屠骏|tujun,柳小明|liuxm,杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "陈宗勇|chenzynb,俞志波|yuzb,王卓琳|wangzl,顾婷婷|gutt_nb,王显宇|wangxy,金铖铖|jincc,屠骏|tujun,奚鹏飞|xipf"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "屠骏|tujun,章栋炯|zhangdj_nb,虞光辉|yugh"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": [
+              "柳小明|liuxm"
+            ],
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": [
+              "杨磊|yanglei"
+            ],
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": [
+              "陈宗勇|chenzynb"
+            ],
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": [
+              "陈敏|chenmin10"
+            ],
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      },
+      {
+        "decisionName": "继续流转",
+        "decision": "JUMP",
+        "approvalDesc": "请阅处",
+        "singleApprovalDescs": [
+          "请阅处",
+          "请各专业都要重视，确保安全",
+          "请遵照执行",
+          "请金铖铖牵头做好解读"
+        ],
+        "recommendedFields": [
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": [
+              "屠骏|tujun"
+            ],
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ],
+        "globalRecommendFields": [
+          {
+            "fieldName": "frontForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "屠骏|tujun",
+              "柳小明|liuxm",
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "王显宇|wangxy",
+              "章栋炯|zhangdj_nb",
+              "虞光辉|yugh",
+              "钱健|qianj",
+              "陈敏|chenmin10",
+              "顾婷婷|gutt_nb",
+              "金铖铖|jincc",
+              "王卓琳|wangzl",
+              "俞志波|yuzb",
+              "奚鹏飞|xipf",
+              "梁黔宁|liangqn"
+            ]
+          },
+          {
+            "fieldName": "assistForPersonnel_id",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "章栋炯|zhangdj_nb",
+              "杨磊|yanglei",
+              "陈敏|chenmin10",
+              "虞光辉|yugh",
+              "屠骏|tujun",
+              "陈宗勇|chenzynb",
+              "钱健|qianj",
+              "柳小明|liuxm",
+              "王显宇|wangxy"
+            ]
+          },
+          {
+            "fieldName": "collectPersons",
+            "combinedRecommendedValues": null,
+            "singleRecommendedValues": [
+              "杨磊|yanglei",
+              "陈宗勇|chenzynb",
+              "陈敏|chenmin10",
+              "屠骏|tujun"
+            ]
+          }
+        ]
+      }
+    ]
+  }

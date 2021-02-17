@@ -1,0 +1,3 @@
+POST http://172.16.2.104:8080/aitalk/api/downloadFile.ajax?piid=piid:cfab00ec-dbe5-4ab6-9073-e71fe15924c1&qaBankId=8ac9589577475350017747649d000004&fileId=caf680aa-40e4-4ea8-8e58-5f85c8e04709
+Content-Type: application/json; charset=UTF-8
+aitalk_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImEyNWY1Mjk5LWMzMjctNGJiYy1hZDRiLTQ1ZjNmYzQ0NmI2ZiIsImV4cCI6MTYxMjI1NjYwMywidXNlcm5hbWUiOiJ6aGFveGluYyJ9.6Ly18sD--lh2c1dUH0h3UW8d2KW7zFOvwfo6IeRyc70

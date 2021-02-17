@@ -10,7 +10,7 @@
     @mouseover.stop="el.$$overed = true"
     @mouseout="el.$$overed = false"
   >
-    <span v-if="el.children"  @click="fold(el)">-</span>
+    <span v-if="el.children"  @click="fold(el)" class="foldIcon">-</span>
     <div class="line">
       <span v-show="el.$$nodeType != 3"
         >&lt;{{ el.tagName }}
@@ -71,6 +71,9 @@ filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.2;
 #ideDesigner .group.fold {
   height: 24px;
   overflow-y: hidden;
+}
+#ideDesigner .foldIcon{
+  cursor:pointer;
 }
 #ideDesigner .line {
   display: inline-block;

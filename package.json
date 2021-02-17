@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "build1":"vue-cli-service build"
   },
   "dependencies": {
     "vue": "^3.0.0-rc.1",

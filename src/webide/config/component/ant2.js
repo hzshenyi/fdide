@@ -2,10 +2,10 @@ let data = [{
     title: "布局",
     children: [{
             title: "上下布局",
-            html: `<fd-layout><fd-layout-pane style="height: 50px;border: 1px dotted rgb(218 214 214);"></fd-layout-pane><fd-layout-pane style="height: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
+            html: `<fd-layout><fd-layout-pane style="height: 50px;border: 1px dotted rgb(241 211 211);"></fd-layout-pane><fd-layout-pane style="height: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
         },{
           title: "左右布局",
-          html: `<fd-layout lr><fd-layout-pane style="width: 250px;border: 1px dotted rgb(218 214 214);"></fd-layout-pane><fd-layout-pane style="width: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
+          html: `<fd-layout lr><fd-layout-pane style="width: 250px;border: 1px dotted rgb(241 211 211);"></fd-layout-pane><fd-layout-pane style="width: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout>`
       }, {
             title: "2列栅格",
             html: ` <a-row>
