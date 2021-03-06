@@ -1,0 +1,3 @@
+http://10.78.200.53:9090/recommend-node/items/showrecommenditem
+Content-Type: application/json; charset=UTF-8
+{"systemId": "公文系统","templateId": "fgs_hz_fileget_dept","nodeId": "yp","userId": "xieyt"}

@@ -8,6 +8,11 @@
             </a-collapse-panel>
             <a-collapse-panel key="3" header="标题3">
               
-            </a-collapse-panel>
+            <a-timeline>
+          <a-timeline-item>起点</a-timeline-item>
+          <a-timeline-item>审批</a-timeline-item>
+          <a-timeline-item>会签</a-timeline-item>
+          <a-timeline-item>结束</a-timeline-item>
+        </a-timeline></a-collapse-panel>
           </a-collapse></fd-layout-pane><fd-layout-pane style="width: 100%;border: 1px dotted rgb(218 214 214);"></fd-layout-pane></fd-layout></fd-layout-pane></fd-layout></div>
 </template>
