@@ -33,7 +33,7 @@
         v-model="el.innerHTML"
         @change="domChangeInnerHtml(el)" 
     /></span>
-    <!-- 如果有子控件并且有innerHTML则显示一个不能编辑的html -->
+    <!-- 如果有子控件并且有innerHTML则显示一个不能编辑的html 2021 -->
      <div class="group" v-if="el.children&&el.innerHTML"
       ><span style="width: 100%">{{ el.innerHTML }}</span></div>
       <!-- 替归显示子控件 -->
